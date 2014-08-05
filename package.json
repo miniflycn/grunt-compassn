@@ -1,0 +1,39 @@
+{
+  "name": "grunt-compassn",
+  "description": "grunt plugin use compass-node",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miniflycn/grunt-compassn",
+  "author": {
+    "name": "Daniel Yang",
+    "email": "miniflycn@justany.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miniflycn/grunt-compassn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miniflycn/grunt-compassn/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "compass-node": "*"
+  },
+  "devDependencies": {
+    "grunt-mocha-phantomjs": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt": "*"
+  },
+  "peerDependencies": {
+    "grunt": "*"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
