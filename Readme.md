@@ -20,7 +20,7 @@ grunt.loadNpmTasks('grunt-compassn');
 ## Compass task
 _Run this task with the `grunt compass` command._
 
-[compass-node](https://github.com/miniflycn/node-compass/) is an open-source which is a subset of [Compass](http://compass-style.org/).
+[compass-node](https://github.com/miniflycn/node-compass/) is an open-source framework which is a subset of [Compass](http://compass-style.org/).
 
 ### Options
 
