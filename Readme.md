@@ -75,15 +75,12 @@ grunt.initConfig({
   compass: {                  // Task
     dist: {                   // Target
       options: {              // Target options
-        sassDir: 'sass',
-        cssDir: 'css',
-        environment: 'production'
+        outputStyle: 'compressed'
       }
     },
     dev: {                    // Another target
       options: {
-        sassDir: 'sass',
-        cssDir: 'css'
+        outputStyle: 'nested'
       }
     }
   }
@@ -92,38 +89,6 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-contrib-compass');
 
 grunt.registerTask('default', ['jshint', 'compass']);
-```
-
-
-#### Example usage
-
-
-##### Use external config file
-
-```javascript
-grunt.initConfig({
-  compass: {
-    dist: {
-      options: {
-        config: 'config/config.rb'
-      }
-    }
-  }
-});
-```
-
-##### Override setting in external config file
-
-```javascript
-grunt.initConfig({
-  compass: {
-    dist: {
-      options: {
-        outputStyle: 'compressed'
-      }
-    }
-  }
-});
 ```
 
 
