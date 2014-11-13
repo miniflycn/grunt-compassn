@@ -13,8 +13,9 @@ module.exports = function (grunt) {
     grunt.verbose.writeflags(options, 'Options');
 
     this.files.forEach(function (f) {
+      var fileOptions = JSON.parse(JSON.stringify(options));
       var filepath = f.src[0];
-      options.success = function (css) {
+      fileOptions.success = function (css) {
         f.dest = f.dest.replace(/.scss$/, '.css');
         grunt.file.write(f.dest, css);
         grunt.log.writeln('File "' + f.dest + '" created.');
@@ -22,10 +23,10 @@ module.exports = function (grunt) {
           done();
         }
       };
-      options.error = function (error) {
+      fileOptions.error = function (error) {
         grunt.log.error(error);
       };
-      compass.render(filepath, options);
+      compass.render(filepath, fileOptions);
     });
   });
 };

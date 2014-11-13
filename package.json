@@ -1,7 +1,7 @@
 {
   "name": "grunt-compassn",
   "description": "grunt plugin use compass-node",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/miniflycn/grunt-compassn",
   "author": {
     "name": "Daniel Yang",
