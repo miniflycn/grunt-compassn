@@ -17,7 +17,7 @@ module.exports = function (grunt) {
       var filepath = f.src[0];
       fileOptions.success = function (css) {
         f.dest = f.dest.replace(/.scss$/, '.css');
-        grunt.file.write(f.dest, css);
+        grunt.file.write(f.dest, css.css);
         grunt.log.writeln('File "' + f.dest + '" created.');
         if (!(--l)) {
           done();

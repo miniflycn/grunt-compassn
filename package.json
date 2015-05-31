@@ -1,7 +1,7 @@
 {
   "name": "grunt-compassn",
   "description": "grunt plugin use compass-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/miniflycn/grunt-compassn",
   "author": {
     "name": "Daniel Yang",
@@ -23,7 +23,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "compass-node": "*"
+    "compass-node": "^0.1.5"
   },
   "devDependencies": {
     "grunt-mocha-phantomjs": "~0.4.0",
