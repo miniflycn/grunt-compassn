@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         }
       };
       fileOptions.error = function (error) {
-        grunt.log.error(error);
+        grunt.log.error(error.message);
       };
       compass.render(filepath, fileOptions);
     });
