@@ -1,5 +1,7 @@
 # grunt-compassn
 
+[![Build Status](https://travis-ci.org/miniflycn/grunt-compassn.svg?branch=master)](https://travis-ci.org/miniflycn/grunt-compassn)
+
 > Compile Compass to CSS using compass-node.
 
 ## Getting Started
