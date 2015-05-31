@@ -8,7 +8,7 @@ This plugin requires Grunt `~0.4.0`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-contrib-compass --save-dev
+npm install grunt-compassn --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
@@ -26,17 +26,9 @@ _Run this task with the `grunt compass` command._
 
 You can use all compass-node options. 
 
-#### data
+### files
 
-`data` is a String containing the scss to be rendered by compass.
-
-#### success
-
-`success` is a `Function` to be called upon successful rendering of the scss to css.
-
-#### error
-
-`error` is a `Function` to be called upon occurance of an error when rendering the scss to css. 
+you can see more informations in http://gruntjs.com/configuring-tasks#files
 
 #### includePaths
 
