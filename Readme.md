@@ -66,16 +66,35 @@ you can see more informations in http://gruntjs.com/configuring-tasks#files
 
 ```javascript
 grunt.initConfig({
-  compass: {                  // Task
-    dist: {                   // Target
-      options: {              // Target options
-        outputStyle: 'compressed'
-      }
+  // Task
+  compass: {
+    // Task options
+    options: {
+      precision: 5,
+      css: '.temp/<%= yeoman.styles %>',
+      font: '<%= yeoman.app %>/<%= yeoman.styles %>/fonts',
+      includePaths: ['<%= yeoman.app %>/bower_components'],
+      httpImagesPath: '/<%= yeoman.images %>',
     },
-    dev: {                    // Another target
-      options: {
-        outputStyle: 'nested'
-      }
+    // Target
+    dist: {                   
+      // Target options
+      outputStyle: 'compressed'
+      files: {
+        '.temp/<%= yeoman.styles %>/style.css': [
+          '<%= yeoman.app %>/<%= yeoman.styles %>/main.scss'
+        ]
+      },
+    },
+    // Another target
+    dev: {                    
+      // Another target options
+      outputStyle: 'nested',
+      files: {
+        '.temp/<%= yeoman.styles %>/style.css': [
+          '<%= yeoman.app %>/<%= yeoman.styles %>/main.scss'
+        ]
+      },
     }
   }
 });
